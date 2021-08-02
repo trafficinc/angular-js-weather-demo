@@ -1,0 +1,54 @@
+.forecast {
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+   }
+
+/*   .forecast .data {
+    width: 60%;
+   }
+
+   .forecast .row {
+    margin-bottom: 10px;
+   } */
+
+   body > app-root > app-weather > div > div.page-body > div.page-body.details > app-weather-details > div > div:nth-child(1) > div > i {
+    font-size:8rem;
+   }
+
+   .forecast .row .title {
+    font-size: 30px;
+    color: #427188;
+   }
+
+   .forecast .row .description {
+    font-size: 24px;
+    color: #2196f3;
+   }
+
+   /* .forecast .subrow {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    margin-bottom: 10px;
+   } */
+   .forecast .subrow .title {
+    font-size: 24px;
+    color: #dc9833;
+   }
+
+   .forecast .subrow .description {
+    font-size: 24px;
+    color: #2196f3;
+   }
+
+   /* .forecast .logo {
+    height: 100%;
+    width: 40%;
+    opacity: .4;
+   }
+   .forecast .logo > i {
+    display: block;
+    text-align: center;
+    font-size: 120px;
+   } */

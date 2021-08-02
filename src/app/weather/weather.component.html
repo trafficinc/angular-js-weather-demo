@@ -1,0 +1,15 @@
+<div class="page">
+  <div class="page-header">Weather Forecast</div>
+  <div class="page-body">
+    <div class="page-body sidebar">
+      <ul class="cities-list"> <!--Added the list of cities-->
+        <li class="cities-list item" *ngFor="let city of cities; index as i" (click)="onChooseCity(i)">
+            {{ city.name }}
+        </li>
+      </ul>
+    </div>
+    <div class="page-body details">
+      <app-weather-details *ngIf="chosenCity >= 0" [forecast]="cities[chosenCity].forecast"></app-weather-details>
+    </div>
+  </div>
+ </div>

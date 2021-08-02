@@ -1,0 +1,39 @@
+<div class="container forecast">
+  <div class="row">
+    <div class="col">
+      <span class="forecast row title"><strong>Conditions:</strong> </span>
+      <span class="forecast subrow title">{{ forecast.conditions | initUpperCase }}</span>
+      <i class="forecast subrow description wi wi-day-{{forecast.conditions}}"></i>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <span class="forecast row title"><strong>Temperature</strong></span>
+      <div class="col">
+        <span class="forecast subrow title">Day: </span>
+        <span class="forecast subrow description">
+          {{ forecast.temperature.day.min }}&#176; - {{ forecast.temperature.day.max }}&#176;C
+        </span>
+      </div>
+      <div class="col">
+        <span class="forecast subrow title">Night: </span>
+        <span class="forecast subrow description">
+          {{ forecast.temperature.night.min }}&#176; - {{ forecast.temperature.night.max }}&#176;C
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <span class="forecast row title"><strong>Wind</strong> </span>
+      <div class="col">
+        <span class="forecast subrow title">Speed: </span>
+        <span class="forecast subrow description">{{ forecast.wind.speed }}mps</span>
+      </div>
+      <div class="col">
+        <span class="forecast subrow title">Direction: </span>
+        <span class="forecast subrow description">{{ forecast.wind.direction | initUpperCase }}</span>
+      </div>
+    </div>
+  </div>
+</div>
